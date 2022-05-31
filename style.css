@@ -4,43 +4,78 @@
     box-sizing: border-box;
 }
 
-.contanier , body {
-    display: flex;
-    width: 100%;
+body {
+    height: 100vh;
+}
+
+main {
     height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 .aside {
-    display: flex;
     width: 20%;
     height: 100%;
-    background-color: grey;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
 }
 
 .rettangolo {
-    width: 10px;
-    height: 5px;
-    justify-content: center;
-}
-
-.mininav {
-    display: flex;
-    width: 10%;
-    background-color: lightgray;
-    justify-content: end;
+    width: 6rem;
+    height: 3rem;
+    background-color: white;
+    margin-top: 1rem;
 }
 
 .content {
-    width: 250px;
-    height: 125px;
-    background-color: grey;
+    flex: 1;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen (max-width 400px) {
+.button {
+    background-color: grey;
+    width: 5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
 
+.search {
+    width: 85%;
+    height: 7rem;
+    background-color: lightgrey;
+    position: relative;
+    align-self: center;
+    margin-top: 10rem;
+}
+
+.search input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width 400px) {
     .aside {
         display: none; 
     }
-    
+
+    .button {
+        width: auto;
+        margin-bottom: .1rem;
+    }
+
+    .search {
+        width: 100%;
+        margin: 0;
+    }
 }
 
