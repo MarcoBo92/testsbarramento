@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contanier , body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.aside {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: grey;
+}
+
+.rettangolo {
+    width: 10px;
+    height: 5px;
+    justify-content: center;
+}
+
+.mininav {
+    display: flex;
+    width: 10%;
+    background-color: lightgray;
+    justify-content: end;
+}
+
+.content {
+    width: 250px;
+    height: 125px;
+    background-color: grey;
+}
+
+@media only screen (max-width 400px) {
+
+    .aside {
+        display: none; 
+    }
+    
+}
+
